@@ -1,0 +1,77 @@
+/* Custom Vehicle Marker Styles */
+.custom-vehicle-marker {
+  background: transparent !important;
+  border: none !important;
+  will-change: transform;
+}
+
+.custom-vehicle-marker svg {
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+}
+
+/* Smooth movement for Leaflet marker */
+.leaflet-marker-pane .custom-vehicle-marker {
+  transition: none !important;
+}
+
+.custom-vehicle-marker:hover {
+  transform: scale(1.08);
+  transition: transform 0.2s ease-in-out;
+}
+
+/* Ensure leaflet container has proper z-index */
+.leaflet-container {
+  z-index: 0 !important;
+}
+
+.leaflet-pane {
+  z-index: 400 !important;
+}
+
+.leaflet-top,
+.leaflet-bottom {
+  z-index: 1000 !important;
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 768px) {
+  /* Smaller vehicle icon on mobile */
+  .custom-vehicle-marker {
+    transform: scale(0.8);
+  }
+  
+  .custom-vehicle-marker:hover {
+    transform: scale(0.85);
+  }
+  
+  /* Adjust leaflet controls for mobile */
+  .leaflet-control-zoom {
+    margin-top: 10px !important;
+    margin-left: 10px !important;
+  }
+  
+  .leaflet-control-zoom a {
+    width: 28px !important;
+    height: 28px !important;
+    line-height: 28px !important;
+    font-size: 18px !important;
+  }
+  
+  /* Ensure touch targets are adequate */
+  .leaflet-touch .leaflet-control-zoom a {
+    width: 32px !important;
+    height: 32px !important;
+    line-height: 32px !important;
+  }
+}
+
+/* Very small screens */
+@media (max-width: 480px) {
+  .custom-vehicle-marker {
+    transform: scale(0.7);
+  }
+  
+  .custom-vehicle-marker:hover {
+    transform: scale(0.75);
+  }
+}
