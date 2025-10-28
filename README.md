@@ -2,14 +2,11 @@
 
 A real-time vehicle tracking and movement simulation application built with React and Leaflet maps. This application visualizes vehicle movement along a predefined route with smooth animations and interactive controls.
 
-## Features
+## 🚘 Vehicle Movement Demo
 
-- 🗺️ **Interactive Map**: Real-time vehicle tracking using Leaflet/OpenStreetMap
-- 🎬 **Playback Controls**: Play, pause, and reset vehicle movement simulation
-- ⚡ **Variable Speed**: Adjust playback speed from 0.5x to 3x
-- 📍 **Route Visualization**: See the complete path with traveled route highlighted
-- 📊 **Live Statistics**: Real-time speed, coordinates, and timestamp information
-- 📱 **Responsive Design**: Fully responsive UI for mobile, tablet, and desktop
+Experience the live demo of the **Vehicle Movement** project hosted on Netlify.
+
+🔗 **Live Demo:** [https://blockly-vehiclemovement.netlify.app](https://blockly-vehiclemovement.netlify.app)
 
 ## Prerequisites
 
